@@ -8,4 +8,11 @@ let shoppingList = ['Pane', 'Broccoli', 'Nutella', 'Birra', 'Pasta'];
 // 2. Dichiaro una variabile collegata all'id dell'ul del mio DOM
 const listContainer = document.querySelector('#list');
 
-
+// 3. Formulo il ciclo while
+let i = 0;
+while ( i < shoppingList.length) {
+    let item = document.createElement('li');
+    item.innerHTML += shoppingList[i];
+    listContainer.append(item);
+    i++;
+}
